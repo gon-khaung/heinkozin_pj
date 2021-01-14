@@ -1,0 +1,601 @@
+body {
+  width: 100%;
+  margin: 0px;
+  margin: 0;
+  height: 100vh;
+  font-family: "Sansita Swashed", cursive;
+}
+
+body marquee {
+  background-color: yellow;
+  color: black;
+  width: 100%;
+  z-index: -1;
+}
+
+body .header {
+  width: 100%;
+  height: 65px;
+  margin: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: #371e1b;
+  text-align: center;
+}
+
+body .header h2 {
+  height: 65px;
+  line-height: 65px;
+  margin: 0;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+}
+
+body .header h2 a {
+  text-decoration: none;
+  color: white;
+}
+
+body .header ul {
+  display: inline;
+  margin: 0;
+  height: 65px;
+  float: right;
+  padding-right: 20px;
+}
+
+body .header ul li {
+  display: inline;
+  line-height: 65px;
+  font-size: 1em;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+body .header ul li a {
+  color: #fafafa;
+  text-decoration: none;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+body .header ul li a:hover {
+  color: white;
+  -webkit-box-shadow: 1px 1px 36px -10px white;
+  box-shadow: 1px 1px 36px -10px white;
+}
+
+body .header ul li:nth-child(2) {
+  position: relative;
+  display: inline-block;
+}
+
+body .header ul li:nth-child(2) .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  height: auto;
+  z-index: 1;
+  list-style: none;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+body .header ul li:nth-child(2) .dropdown-content li {
+  display: block;
+  width: 100%;
+  height: 60px;
+  text-indent: 10px;
+  line-height: 60px;
+}
+
+body .header ul li:nth-child(2) .dropdown-content li:hover {
+  -webkit-box-shadow: -2px 23px 54px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 23px 54px -10px rgba(0, 0, 0, 0.75);
+  background-color: #371e1b;
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+body .header ul li:nth-child(2):hover .dropdown-content {
+  display: block;
+}
+
+body .main {
+  margin: 0;
+  padding-top: 55px;
+}
+
+body .main .cards .card img {
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .main .cards .card p.card-text {
+  font-size: 13px;
+}
+
+body .main .hot-items {
+  padding: 0;
+  height: 280px;
+  right: 0;
+  background-color: #e6e6e6;
+}
+
+body .main .hot-items h3 {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+}
+
+body .main .hot-items .items {
+  width: 100%;
+}
+
+body .main .hot-items .items .item {
+  width: 100%;
+  display: none;
+}
+
+body .main .hot-items .items .item img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .main .hot-items .items .item p {
+  position: relative;
+  margin-top: -40px;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  color: white;
+  background-color: #371e1b;
+  text-align: center;
+  padding: 0;
+}
+
+body .main .hot-items .items .item p span {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+body .main .hot-items .items .left,
+body .main .hot-items .items .right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+body .main .hot-items .items .right {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+body .main .hot-items .items .left:hover,
+body .main .hot-items .items .right:hover {
+  background-color: rgba(115, 115, 115, 0.8);
+}
+
+body .cart img {
+  width: 100%;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .cart button {
+  padding: 10px;
+  border: 0;
+  border-radius: 15px;
+  color: white;
+  float: right;
+  background: #ff3333;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+body .cart button:hover {
+  color: white;
+  -webkit-box-shadow: -2px 12px 40px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 12px 40px 1px rgba(0, 0, 0, 0.75);
+}
+
+body .footer {
+  width: 100%;
+  background-color: #371e1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .footer h2 {
+  width: 100%;
+  text-indent: 35px;
+}
+
+body .footer div {
+  width: 33.3%;
+  float: left;
+  color: white;
+}
+
+body .footer div a {
+  color: white;
+  text-decoration: none;
+}
+
+body .footer div ul {
+  margin: auto;
+  display: block;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+body .footer div:nth-child(1) {
+  width: 66.66%;
+  text-align: center;
+}
+
+body .home .bg {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+body .home .bg .slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+body .home .bg .slide img {
+  width: 100%;
+  height: 100%;
+}
+
+body .home .welcome {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  font-family: "Sansita Swashed", cursive;
+  width: 30%;
+  animation: slide-up ease 2s;
+  -webkit-animation: slide-up ease 2s;
+  -moz-animation: slide-up ease 2s;
+}
+
+body .home .lets-order {
+  position: absolute;
+  width: 175px;
+  overflow: hidden;
+  height: 50px;
+  top: 60%;
+  font-size: 18px;
+  left: 10%;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  animation: fadeIn 1.5s;
+  -webkit-animation: fadeIn 1.5s;
+}
+
+body .home .lets-order:hover {
+  background-color: white;
+  color: black;
+  border: 0;
+}
+
+body .home .fade-in {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: white;
+  font-size: 60px;
+  font-family: "Sansita Swashed", cursive;
+  animation: fadeIn ease 2s 5s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    left: -30%;
+  }
+  100% {
+    opacity: 1;
+    left: 10%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    left: -30%;
+  }
+  100% {
+    opacity: 1;
+    left: 10%;
+  }
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    opacity: 0;
+    top: 70%;
+  }
+  100% {
+    opacity: 1;
+    top: 40%;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    top: 70%;
+  }
+  100% {
+    opacity: 1;
+    top: 40%;
+  }
+}
+
+body .form .signup {
+  background-color: #ededed;
+  width: 100%;
+  display: display;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: -4px 2px 28px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -4px 2px 28px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 2px 28px -2px rgba(0, 0, 0, 0.75);
+}
+
+body .form .signup h2 {
+  margin-left: 15%;
+  width: 70%;
+  margin-right: 15%;
+  margin-top: 50px;
+}
+
+body .form .signup p {
+  margin-left: 15%;
+  width: 70%;
+  margin-right: 15%;
+}
+
+body .form .signup p button {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #cb2027;
+  color: white;
+  border: 0;
+  text-decoration: underline;
+}
+
+body .form .signup form {
+  width: 100%;
+}
+
+body .form .signup form input {
+  font-size: 16px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 20px;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 10px;
+  border-radius: 15px;
+  border: 0;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  -webkit-transition: box-shadow 0.5s;
+  -moz-transition: box-shadow 0.5s;
+  -ms-transition: box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+}
+
+body .form .signup form input:hover {
+  box-shadow: -4px 2px 28px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -4px 2px 28px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 2px 28px -2px rgba(0, 0, 0, 0.75);
+}
+
+body .form .signup form input[type="submit"] {
+  width: 30%;
+  background-color: #cb2027;
+  color: white;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+body .form .signup form input[type="checkbox"] {
+  width: 10%;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+body .form .signup form span {
+  margin-left: 15%;
+  text-indent: 10px;
+}
+
+body .form .signin {
+  background-color: #ededed;
+  width: 100%;
+  display: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: -4px 2px 28px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -4px 2px 28px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 2px 28px -2px rgba(0, 0, 0, 0.75);
+}
+
+body .form .signin h2 {
+  margin-left: 15%;
+  width: 70%;
+  margin-right: 15%;
+  margin-top: 50px;
+}
+
+body .form .signin p {
+  margin-left: 15%;
+  width: 70%;
+  margin-right: 15%;
+}
+
+body .form .signin p button {
+  padding: 5px;
+  background-color: #cb2027;
+  border-radius: 10px;
+  color: white;
+  border: 0;
+  text-decoration: underline;
+}
+
+body .form .signin form {
+  width: 100%;
+}
+
+body .form .signin form input {
+  font-size: 16px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 20px;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 10px;
+  border-radius: 15px;
+  border: 0;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  -webkit-transition: box-shadow 0.5s;
+  -moz-transition: box-shadow 0.5s;
+  -ms-transition: box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+}
+
+body .form .signin form input:hover {
+  box-shadow: -4px 2px 28px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -4px 2px 28px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 2px 28px -2px rgba(0, 0, 0, 0.75);
+}
+
+body .form .signin form input[type="submit"] {
+  width: 30%;
+  background-color: #cb2027;
+  color: white;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+body .form .signin form input[type="checkbox"] {
+  width: 10%;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+body .form .signin form span {
+  margin-left: 15%;
+  text-indent: 10px;
+}
+
+.fade-task {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
