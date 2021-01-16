@@ -30,7 +30,7 @@
             </ul>
         </nav> -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top justify-content-end" style="background-color: #371e1b">
-        <a class="navbar-brand" href="{{ url('index') }}">Cafe Shop</a>
+        <a class="navbar-brand" href="{{ url('/') }}">Cafe Shop</a>
 
         <button class="navbar-toggler ml-auto mr-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
