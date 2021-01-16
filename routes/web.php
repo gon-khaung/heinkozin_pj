@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BackendController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
 
@@ -21,5 +22,9 @@ Route::get('/cart', [FrontendController::class, 'cart']);
 Route::get('/form', [FrontendController::class, 'form']);
 Route::get('/home', [FrontendController::class, 'home']);
 Route::get('/feedback', [FrontendController::class, 'feedback']);
+Route::get('/admin',[BackendController::class, 'index']);
+
+Route::post('/item', [BackendController::class, 'create_item']);
+
 
 

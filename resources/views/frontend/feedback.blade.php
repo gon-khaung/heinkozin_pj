@@ -1,6 +1,6 @@
 @extends('frontend.master')
 
-@section('content')        
+@section('content')
 <div class="container-fluid">
             <form
                 action=""
@@ -36,7 +36,7 @@
                     marginwidth="0"
                     alt="You need internet to access map."
                 ></iframe>
-                <a href="https://123movies-to.org">123movies</a>
+
             </div>
         </div>
         <div class="footer container-fluid p-5">
