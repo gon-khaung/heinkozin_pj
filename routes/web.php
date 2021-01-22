@@ -25,6 +25,7 @@ Route::get('/feedback', [FrontendController::class, 'feedback']);
 Route::get('/admin',[BackendController::class, 'index']);
 
 Route::post('/item', [BackendController::class, 'create_item']);
+Route::post('/feedback', [BackendController::class, 'feedback']);
 
 
 

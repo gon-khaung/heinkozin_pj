@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\CafeModel;
+use App\Models\FeedBack;
 
 class BackendController extends Controller
 {
@@ -24,6 +25,17 @@ class BackendController extends Controller
         $data->name = $name;
         $data->price = $price;
         $data->photo = $photo_name;
+        $data->save();
+        return back();
+    }
+
+    public function feedback(Request $request){
+        $name = $request->name;
+        $message = $request->message;
+
+        $data = new FeedBack;
+        $data->name = $name;
+        $data->message = $message;
         $data->save();
         return back();
     }

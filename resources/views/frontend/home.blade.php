@@ -32,17 +32,18 @@
                 </div>
             </div>
             <div class="row cards col-md-9 mb-5">
+            @foreach ($data as $datas)
                 <div class="col-md-3 offset-1 offset-md-0 mt-2 col-sm-10">
                     <div class="card">
                         <img
                             class="card-img-top"
-                            src="img/cappuccino-tiramisu.webp"
+                            src="{{asset('photos/items/'.$datas->photo)}}"
                             alt="Card image cap"
                         />
                         <div class="card-body">
-                            <h6 class="card-title">Cappuccino Tiramisu</h6>
+                            <h6 class="card-title">{{$datas->name}}</h6>
                             <span class="card-text badge badge-danger"
-                                >2,000 MMK</span
+                                >{{$datas->price}}</span
                             >
                         </div>
                         <div class="card-footer text-center">
@@ -52,153 +53,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-3 offset-1 offset-md-0 mt-2 col-sm-10">
-                    <div class="card">
-                        <img
-                            class="card-img-top"
-                            src="img/coffee-cupcakes.webp"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h6 class="card-title">Coffee Cupcakes</h6>
-                            <span class="card-text badge badge-danger"
-                                >1500 MMK</span
-                            >
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="#" class="btn btn-sm btn-danger"
-                                >Add to cart</a
-                            >
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 offset-1 offset-md-0 mt-2 col-sm-10">
-                    <div class="card">
-                        <img
-                            class="card-img-top"
-                            src="img/iced-coffee-sundae.webp"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h6 class="card-title">Iced Coffee Sundae</h6>
-                            <span class="card-text badge badge-danger"
-                                >1500 MMK</span
-                            >
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="#" class="btn btn-sm btn-danger"
-                                >Add to cart</a
-                            >
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 offset-1 offset-md-0 mt-2 col-sm-10">
-                    <div class="card">
-                        <img
-                            class="card-img-top"
-                            src="img/macchiato.webp"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h6 class="card-title">Macchiato</h6>
-                            <span class="card-text badge badge-danger"
-                                >1500 MMK</span
-                            >
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="#" class="btn btn-sm btn-danger"
-                                >Add to cart</a
-                            >
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 offset-1 offset-md-0 mt-2 col-sm-10">
-                    <div class="card">
-                        <img
-                            class="card-img-top"
-                            src="img/tiramisu-ice-cream-cake.webp"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h6 class="card-title">Tiramisu Ice-cream Cake</h6>
-                            <span class="card-text badge badge-danger"
-                                >1500 MMK</span
-                            >
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="#" class="btn btn-sm btn-danger"
-                                >Add to cart</a
-                            >
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 offset-1 offset-md-0 mt-2 col-sm-10">
-                    <div class="card">
-                        <img
-                            class="card-img-top"
-                            src="img/coffee-ice-cream-terrine.webp"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h6 class="card-title">Coffee ice cream terrine</h6>
-                            <span class="card-text badge badge-danger"
-                                >2500 MMK</span
-                            >
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="#" class="btn btn-sm btn-danger"
-                                >Add to cart</a
-                            >
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 offset-1 offset-md-0 mt-2 col-sm-10">
-                    <div class="card">
-                        <img
-                            class="card-img-top"
-                            src="img/black-coffee.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h6 class="card-title">Black Coffee</h6>
-                            <span class="card-text badge badge-danger"
-                                >1000 MMK</span
-                            >
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="#" class="btn btn-sm btn-danger"
-                                >Add to cart</a
-                            >
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 offset-1 offset-md-0 mt-2 col-sm-10">
-                    <div class="card">
-                        <img
-                            class="card-img-top"
-                            src="img/flat-white.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h6 class="card-title">Flat White</h6>
-                            <span class="card-text badge badge-danger"
-                                >1500 MMK</span
-                            >
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="#" class="btn btn-sm btn-danger"
-                                >Add to cart</a
-                            >
-                        </div>
-                    </div>
-                </div>
+            @endforeach
             </div>
         </div>
 

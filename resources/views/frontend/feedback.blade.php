@@ -3,20 +3,22 @@
 @section('content')
 <div class="container-fluid">
             <form
-                action=""
+                action="{{ url('feedback')}}"
+                method="post"
                 class="mt-5 pt-5 mb-5 col-md-8 col-sm-12 offset-md-2 offset-sm-0"
             >
+            @csrf
                 <h2 class="mt-3 mb-3">Your feedback</h2>
-                <input type="text" class="form-control" placeholder="Name" />
+                <input type="text" class="form-control" name="name" placeholder="Name" />
                 <textarea
-                    name=""
+                    name="message"
                     id=""
                     class="form-control w-100 mt-4"
                     rows="15"
                     placeholder="Your feedback......"
                 ></textarea>
                 <input
-                    type="button"
+                    type="submit"
                     value="Send"
                     class="form-control col-2 bg-danger text-light mt-4 offset-10"
                 />
